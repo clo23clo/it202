@@ -1,114 +1,133 @@
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Towed Vehicles</title>
-        <style>
-            p, h1 {font-family: helvetica;}
-            p {font-size:1.5em;line-height:1.5em; margin-left: 24px;}
-            pre {font-size: 2em;}
-            div { border: 4px solid black; margin: 10px; border-radius: 12px; background-color: #ededed;}
-            h1 {color: #ff00ff;}
-            #search { border-radius: 20px; 
-	-moz-border-radius: 20px; 
-	-webkit-border-radius: 20px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#b2a48c), to(#9b8d74));
-	background: -moz-linear-gradient(top, #b2a48c, #9b8d74);
-	text-shadow: rgba(0,0,0,.2) 0 0 5px;
-}
-
-#search-submit { 
-	border-radius: 50px; 
-	-moz-border-radius: 50px; 
-	-webkit-border-radius: 50px; 
-	-mox-box-shadow: 0 0 5px black;
-
-	/* Webkit-transition */
-	-webkit-transition-property: background-color; 
-	-webkit-transition-duration: 0.4s, 0.4s; 
-	-webkit-transition-timing-function: linear, ease-in;
-	}
-
-             </style>
+        <title>Towed Car Data </title>
     </head>
     <body>
-    <h2> 
-        <b>
-            Towed Vehicles
-        </b>
-    </h2>
-    Insert license plate in order to find towed vehicle.  Use Q332026 to test.<br>
+        <h1>Towed Car Data</h1>
+        <button id="submit">Submit</button>
+        <div id="results"></div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <fieldset>
-        License Plate:
-        <input type="text" id="search" name="search" />
-        <input type="submit" id="search-submit" value="submit" />
-    </fieldset>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        /*
-            This script retrieves towed vehicle data for 
-            from the 
-            City of Chicago Data Portal
+        <script>
+            /*
+                This script retrieves the towed data information
+                from the City of Chicago Data Portal
+                
+                You are required to enter the information for your vehicle
+                as a license plate number
             
-            This script doesn't update the DOM.
-
-        */
-       
+            */
             
-        
-        
-        
-            // jQuery command to retrieve json data
-        $(function(){   
+            var towedVehicle;
             
-            var plateNumber = "";
-        
-        
-            $("#search-submit").on("click", function(){
-            plateNumber = $("#search").val(); 
-            console.log(plateNumber);
-       
-        
-        
-
-            // base URL to the towed vehicle data
-            var baseURL = 'https://data.cityofchicago.org/resource/rp42-fxjt.json';
-            
-            // optional filters we're appending - status
-            var filters = '?plate='+ plateNumber;
-            
-            // full URL
-            var url = baseURL + filters;
-            
-            console.log (url);
-            $.getJSON(url)
-                .done (function (data) {
-                    // TODO:  add script to add data to the DOM
-                    console.log(data);
-
-                    // loop through the records
+            $(function(){
+                
+                $("#submit").click(function(){
                     
-                    $.each(data, function(index, value){
-                       var html = "<div><h1>" + value.make + "</h1>" +
-                                    "Date towed: " + value.tow_date + "<br>" +
-                                    "Towed to: " + value.towed_to_address + "<br>" +
-                                   "Licence Plate #: " + value.plate + "<br>" +
-                                   "Phone #:" + value.tow_facility_phone + "<br>" +
-                                    "</p>" + 
-                                    "</div>";
-                                    
-                        $("body").append(html);
+                    var html = "";
+                    
+                    // base URL to the food inspections data
+                    var baseURL = 'https://data.cityofchicago.org/resource/rp42-fxjt.json';
+                    
+                    // optional filters we're appending - date range and zip
+                    var filters = "";
+                    
+                    // full URL
+                    var url = baseURL;
+                        
+                    $.getJSON(url).done (function (data) {
+                        // TODO:  add script to add data to the DOM
+                        console.log(data);
+                        // loop through the records
+                        
+                        towedVehicle = data;
+                        
+                        var date = towedVehicle[0].tow_date;
 
-
-                                                
-                    });
-                })
+                        var blk = 0, whi = 0, gry = 0, sil = 0, grn = 0, blu = 0, red = 0, oth = 0;
+                        
+                        if(towedVehicle.length == 0){
+                            html = "No Vehicle Reported";
+                        } else{
+                            $.each(towedVehicle, function(index, value){
+                                if(value.tow_date == date){
+                                    var col = value.color;
+                                    if (col == "BLK")
+                                        blk++;
+                                    else if(col == "WHI")
+                                        whi++;
+                                    else if(col == "GRY")
+                                        gry++;
+                                    else if(col == "SIL")
+                                        sil++;
+                                    else if(col == "GRN")
+                                        grn++;
+                                    else if(col == "BLU")
+                                        blu++;
+                                    else if(col == "RED" || col == "MAR")
+                                        red++;
+                                    else
+                                        oth++;
+                                }
+                            })  // end of .each loop
+                            
+                            /*html = "<p>Black: " + blk + "<br>" +
+                                    "White: " + whi + "<br>" +
+                                    "Grey: " + gry + "<br>" +
+                                    "Silver: " + sil + "<br>" +
+                                    "Green: " + grn + "<br>" +
+                                    "Blue: " + blu + "<br>" +
+                                    "Red: " + red + "</p>";*/
+                            // Load the Visualization API and the corechart package.
+                          google.charts.load('current', {'packages':['corechart']});
+                    
+                          // Set a callback to run when the Google Visualization API is loaded.
+                          google.charts.setOnLoadCallback(drawChart);
+                    
+                          // Callback that creates and populates a data table,
+                          // instantiates the pie chart, passes in the data and
+                          // draws it.
+                          function drawChart() {
+                    
+                            // Create the data table.
+                            var data = new google.visualization.DataTable();
+                            data.addColumn('string', 'Car color');
+                            data.addColumn('number', 'Quantity');
+                            data.addRows([
+                              ['Black', blk],
+                              ['White', whi],
+                              ['Grey', gry],
+                              ['Silver', sil],
+                              ['Green', grn],
+                              ['Blue', blu],
+                              ['Red', red],
+                              ['Other', oth]
+                            ]);
+                    
+                            // Set chart options
+                            var options = {'title':'Towed cars by color on ' + date,
+                                           'width':400,
+                                           'height':300};
+                    
+                            // Instantiate and draw our chart, passing in some options.
+                            var chart = new google.visualization.PieChart(document.getElementById('results'));
+                            chart.draw(data, options);
+                          }
+                        }
+                        
+                        //$("#results").html(html);
+                        
+                    }) // end of getJSON function
+                    
+                })  // end of click function
+                
+            }) // end of ready command
             
-          })
-        })
-        
-        
-    </script>
+            
+        </script>
     </body>
 </html>
