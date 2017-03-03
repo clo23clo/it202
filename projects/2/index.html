@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.parseXML demo</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <style>
+    body {background-color: #C1E7FF;}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+      <div data-role="page" id="pageone">
+    <div data-role="header">
+      <style>
+      </style>
+      <h1 style="background-color:#C1E7FF;">CTA Bus Tracker</h1>
+    </div>
+     <div data-role="main" class="ui-content">
+      <p>This app is filtered to show only the two streets the bus will come to Lane. Use this app to help you track the Addison bus and its schedule or the Western bus and its schedule.</p>
+      <a href="#pagetwo">Go to Page Two</a>
+    </div>
+    <div id="Northbound">
+     </div>
+     <div id="Southbound">
+     </div>
+     <div id="Eastbound">
+     </div>
+     <div id="Westbound">
+     </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+
+        $(function() {
+          
+          
+          var apiPassThruUrl = "https://polar-garden-75406.herokuapp.com/apiPassThru.php";
+          
+          var apiEndpoint = "http://www.ctabustracker.com/bustime/api/v2/getpredictions";
+          
+          
+          $.ajax({
+              url: apiPassThruUrl,
+              dataType: "json",
+              method: 'GET',
+              data: {"apiEndpoint": apiEndpoint,
+                      "key" : "yqsE5uWnZsg3xdX3VWMemh8Mv",
+                      "rt": "49,152",
+                      "stpid": "8417,8195,12527,12569",
+                      "format":"json"}
+            }).done (function (data) {
+              console.log(data);
+              $("body").append("<h1>Western and Addison Routes</h1>");
+          var Northbound = ",";
+          var Southbound = ",";
+          var Eastbound = ",";
+          var Westbound = ",";
+              $.each(data["bustime-response"]["prd"], function(i,v) {
+                $("#"+ v.rtdir).prepend("Stop:" + v.stpnm + "<br>"+ "Direction:" + v.rtdir + "<br>"+ "Time 'till due:"  + v.prdctdn + "<br>");
+            
+                
+              })
+
+            });
+        });
+  
+</script>
+</body>
+</html>

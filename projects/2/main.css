@@ -1,0 +1,24 @@
+    #Northbound{
+      width: 25%;
+      float: left;
+      border-style: dashed;
+    }
+    #Southbound{
+      width: 25%;
+      float: left;
+      border-style: dashed;
+    }
+    #Eastbound{
+      width: 25%;
+      float: left;
+      border-style: dashed;
+    }
+    #Westbound{
+      width: 25%;
+      float: left;
+      border-style: dashed;
+    }
+    v.prdctdn{
+        font-weight: bold;
+        font-size: 32px;
+    }
