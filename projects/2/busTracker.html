@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<html>
+    <head>
+       <meta charset="utf-8">
   <title>jQuery.parseXML demo</title>
   <link rel="stylesheet" type="text/css" href="main.css"/>
   <link rel="stylesheet" type="text/html" href="busTracker.html"/>
-  <link rel="manifest" href="manifest.json"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <style>
-    body {background-color: #C1E7FF;}
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
-      <div data-role="page" id="pageone">
-    <div data-role="header">
-      <h1 style="background-color:#C1E7FF;">CTA Bus Tracker</h1>
-    </div>
-     <div data-role="footer" class="ui-content">
-      <p>This app is filtered to show only the two streets the bus will come to Lane. Use this app to help you track the Addison bus and its schedule or the Western bus and its schedule.</p>
-      <a href="busTracker.html">Track Western and Addison bus</a>
-    </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  </div>
-      <script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+     <div data-role="main" class="ui-content">
+     <div data-role="header" id="pagetwo">
+    <h1 style="background-color:#C1E7FF;">Western and Addison</h1>
+     <div id="Northbound">
+       <h1 style="font-size: 24px;">Western heading Northbound</h1>
+     </div>
+     <br>
+     <div id="Southbound">
+      <h1 style="font-size: 24px;">Western heading Southbound</h1>
+     </div>
+     <br>
+     <div id="Eastbound">
+      <h1 style="font-size: 24px;">Addison heading Eastbound</h1>
+     </div>
+     <br>
+     <div id="Westbound">
+      <h1 style="font-size: 24px;">Addison heading Westbound</h1>
+     </div>
+     </div>
+  <script>
 
         $(function() {
           
@@ -53,14 +58,17 @@
           var Eastbound = ",";
           var Westbound = ",";
               $.each(data["bustime-response"]["prd"], function(i,v) {
-                $("#"+ v.rtdir).prepend("Stop:" + v.stpnm + "<br>"+ "Direction:" + v.rtdir + "<br>"+ "Time 'till due:"  + v.prdctdn + "<br>");
+                $("#"+ v.rtdir).append("Stop: " + v.stpnm + "<br><br>"+ "Direction: " + v.rtdir + "<br><br>"+ "Time 'till due: "  + v.prdctdn + "<br>");
             
                 
               })
 
             });
         });
-  
 </script>
-</body>
+<div data-role="footer" class="ui-content">
+     <p>Click to go back to homepage</p>
+    <a href="index.html">Go Back</a>
+  </div>
+    </body>
 </html>

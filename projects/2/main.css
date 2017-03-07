@@ -1,24 +1,34 @@
+
     #Northbound{
       width: 25%;
       float: left;
-      border-style: dashed;
+      border-style: double;
+      append: top;
     }
     #Southbound{
       width: 25%;
       float: left;
-      border-style: dashed;
+      border-style: double;
+     append: bottom;
     }
     #Eastbound{
       width: 25%;
-      float: left;
-      border-style: dashed;
+      float: right;
+      border-style: double;
+      append: top; 
     }
     #Westbound{
       width: 25%;
-      float: left;
-      border-style: dashed;
+      float: right;
+      border-style: double;
+      append: bottom;    
     }
-    v.prdctdn{
-        font-weight: bold;
-        font-size: 32px;
+    div {
+      padding: 5px;
+      margin: auto;
+      
     }
+    busTracker.html{
+      background-color: gray;
+      }
+
