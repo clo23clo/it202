@@ -1,0 +1,162 @@
+<!Doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Simple portfolio website</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
+                    <a class="mdl-navigation__link" href="about.html">About</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+                <a class="mdl-navigation__link" href="blog.html">Blog</a>
+                <a class="mdl-navigation__link" href="about.html">About</a>
+                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="http://lucasbardella.com/media/lucasbardella/blog/github.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Connecting to Github</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      This was one of out first projects we connected to our Github accounts. We just made a simple page with a title and pushed it to Github. 
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://clo23clo.github.io/webdevs2/labs/lab3.html">View project.</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="data:image/png;base64,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" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Towed Car data</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        We used one of our old projects from another cloud 9 file. The project was based on towed cars. In this version we made it gather updated data everyday and turned it into a graph.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://clo23clo.github.io/webdevs2/labs/lab4.html">View project.</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBH2R8BAg6wMsXvOO3kj9UySJXXP9UZ7d6eavnBnciR0B9TbLiRQ" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Our own graph data</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Inspired by the towed car data we had to make our own using different files from the city of Chicago data portal. I used food inspections because I have previously made a project on food inspections I believe it would be easy... and it was.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://clo23clo.github.io/webdevs2/labs/lab5.html">View project.</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="http://russian-untouchables.com/images/crimes.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Crime Report data</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        In this project we had to start from scratch and make our own app using another city of Chicago data portal api key. I decided to make an app wher you can search for a specific crime, the results aren't so good in my opinion.    
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://clo23clo.github.io/webdevs2/projects/1/index.html">View project.</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="data:image/png;base64,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" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">CTA bus tracker</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        For this assignment we had to create an app in which we can track all the buses in Chicago using the CTA bus tracker api. We made it only so Western and Addison buses were showing and when they will arrive here at the school.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://clo23clo.github.io/webdevs2/projects/2/index.html">View project.</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="http://www.coloradocreativedesigns.com/images/portfolio.png" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Portfolio project</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                       If you're reading this you're basically already viewing this project. We have to show 6 different projects we have previously done that are connected to Github just like this one.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://preview.c9users.io/clo23clo/webdevs2/projects/3/mdl-template-portfolio/index.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io">View project.</a>
+                    </div>
+                </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Simple portfolio website</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
