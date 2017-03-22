@@ -1,39 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>jQuery.parseXML demo</title>
-  <link rel="stylesheet" type="text/css" href="main.css"/>
-  <link rel="stylesheet" type="text/html" href="busTracker.html"/>
-  <link rel="manifest" href="manifest.json"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <style>
-    body {background-color: #C1E7FF;}
-  </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-      <div data-role="page" id="pageone">
-    <div data-role="header">
-      <h1 style="background-color:#C1E7FF;">CTA Bus Tracker</h1>
-    </div>
-     <div data-role="footer" class="ui-content">
-      <p>This app is filtered to show only the two streets the bus will come to Lane. Use this app to help you track the Addison bus and its schedule or the Western bus and its schedule.</p>
-      <a href="busTracker.html">Track Western and Addison bus</a>
-    </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  </div>
-      <script>
 
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
         $(function() {
-          
           
           var apiPassThruUrl = "https://polar-garden-75406.herokuapp.com/apiPassThru.php";
           
-          var apiEndpoint = "http://www.ctabustracker.com/bustime/api/v2/getpredictions";
+          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga";
+          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/table";
+          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/formations";
+          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/match/events";
           
           
           $.ajax({
@@ -41,26 +25,21 @@
               dataType: "json",
               method: 'GET',
               data: {"apiEndpoint": apiEndpoint,
-                      "key" : "yqsE5uWnZsg3xdX3VWMemh8Mv",
-                      "rt": "49,152",
-                      "stpid": "8417,8195,12527,12569",
                       "format":"json"}
             }).done (function (data) {
               console.log(data);
-              $("body").append();
-          var Northbound = ",";
-          var Southbound = ",";
-          var Eastbound = ",";
-          var Westbound = ",";
-              $.each(data["bustime-response"]["prd"], function(i,v) {
-                $("#"+ v.rtdir).prepend("Stop:" + v.stpnm + "<br>"+ "Direction:" + v.rtdir + "<br>"+ "Time 'till due:"  + v.prdctdn + "<br>");
-            
+              $("body").append("<h1>Bundesliga</h1>");
+             
+              $.each(data["bustime-response"]["routes"], function(i,v) {
+                  $("body").append("Route #" + v.rt + ", " + v.rtnm + "<br>");
                 
               })
 
             });
         });
+            
   
 </script>
+ 
 </body>
 </html>
