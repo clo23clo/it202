@@ -1,0 +1,1989 @@
+{
+    "generated_at": "2017-03-27T15:23:30+00:00",
+    "schema": "http:\/\/schemas.sportradar.com\/bsa\/json\/v1\/endpoints\/soccer\/player_profile.json",
+    "player": {
+        "id": "sr:player:27583",
+        "name": "Hazard, Eden",
+        "type": "forward",
+        "date_of_birth": "1991-01-07",
+        "nationality": "Belgium",
+        "country_code": "BEL",
+        "height": 173,
+        "weight": 74,
+        "preferred_foot": "both"
+    },
+    "teams": [{
+        "id": "sr:competitor:38",
+        "name": "Chelsea FC",
+        "country": "England",
+        "country_code": "ENG",
+        "abbreviation": "CHE"
+    }],
+    "roles": [{
+        "type": "player",
+        "active": "true",
+        "team": {
+            "id": "sr:competitor:38",
+            "name": "Chelsea FC",
+            "country": "England",
+            "country_code": "ENG",
+            "abbreviation": "CHE"
+        },
+        "start_date": "2012-07-01",
+        "jersey_number": 10
+    }, {
+        "type": "player",
+        "active": "false",
+        "team": {
+            "id": "sr:competitor:1643",
+            "name": "Lille OSC",
+            "country": "France",
+            "country_code": "FRA",
+            "abbreviation": "LOSC"
+        },
+        "start_date": "2007-07-01",
+        "end_date": "2012-06-30",
+        "jersey_number": 10
+    }, {
+        "type": "player",
+        "active": "false",
+        "team": {
+            "id": "sr:competitor:4717",
+            "name": "Belgium",
+            "country": "Belgium",
+            "country_code": "BEL",
+            "abbreviation": "BEL"
+        },
+        "end_date": "2017-03-20",
+        "jersey_number": 10
+    }],
+    "statistics": {
+        "seasons": [{
+            "id": "sr:season:534",
+            "name": "Ligue 1 07\/08",
+            "statistics": {
+                "matches_played": 4,
+                "substituted_in": 4,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2008-01-26T17:59:58+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:34",
+                "name": "Ligue 1",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:534",
+                "scheduled": 382,
+                "played": 381,
+                "max_coverage_level": "silver",
+                "max_covered": 381,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:1152",
+            "name": "World Cup 2010, Qualification",
+            "statistics": {
+                "matches_played": 5,
+                "substituted_in": 4,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-10-10T20:17:00+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:11",
+                "name": "WC Qualification, UEFA",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:1152",
+                "scheduled": 30,
+                "played": 268,
+                "max_coverage_level": "silver",
+                "max_covered": 268,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:1542",
+            "name": "Ligue 1 08\/09",
+            "statistics": {
+                "matches_played": 30,
+                "substituted_in": 17,
+                "substituted_out": 9,
+                "goals_scored": 4,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-05-30T17:50:44+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:34",
+                "name": "Ligue 1",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:1542",
+                "scheduled": 384,
+                "played": 384,
+                "max_coverage_level": "silver",
+                "max_covered": 384,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:2120",
+            "name": "Ligue 1 09\/10",
+            "statistics": {
+                "matches_played": 37,
+                "substituted_in": 6,
+                "substituted_out": 15,
+                "goals_scored": 5,
+                "assists": 6,
+                "own_goals": 0,
+                "yellow_cards": 3,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2010-05-15T18:20:52+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:34",
+                "name": "Ligue 1",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:2120",
+                "scheduled": 389,
+                "played": 383,
+                "max_coverage_level": "silver",
+                "max_covered": 381,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:2155",
+            "name": "Europa League 09\/10",
+            "statistics": {
+                "matches_played": 9,
+                "substituted_in": 2,
+                "substituted_out": 2,
+                "goals_scored": 4,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2010-03-18T21:46:22+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:679",
+                "name": "UEFA Europa League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:2155",
+                "scheduled": 12,
+                "played": 469,
+                "max_coverage_level": "silver",
+                "max_covered": 463,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:2613",
+            "name": "Euro Cup 2012, Qualification",
+            "statistics": {
+                "matches_played": 8,
+                "substituted_in": 3,
+                "substituted_out": 3,
+                "goals_scored": 1,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-10-11T16:21:24+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:27",
+                "name": "European Ch.ship QF",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:2613",
+                "scheduled": 8,
+                "played": 248,
+                "max_coverage_level": "silver",
+                "max_covered": 248,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:2719",
+            "name": "Ligue 1 10\/11",
+            "statistics": {
+                "matches_played": 38,
+                "substituted_in": 3,
+                "substituted_out": 19,
+                "goals_scored": 7,
+                "assists": 11,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-05-29T20:17:50+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:34",
+                "name": "Ligue 1",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:2719",
+                "scheduled": 387,
+                "played": 387,
+                "max_coverage_level": "silver",
+                "max_covered": 387,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:2765",
+            "name": "Europa League 10\/11",
+            "statistics": {
+                "matches_played": 7,
+                "substituted_in": 3,
+                "substituted_out": 3,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-02-24T19:21:23+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:679",
+                "name": "UEFA Europa League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:2765",
+                "scheduled": 12,
+                "played": 483,
+                "max_coverage_level": "silver",
+                "max_covered": 481,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:3114",
+            "name": "Coupe de France 10\/11",
+            "statistics": {
+                "matches_played": 5,
+                "substituted_in": 1,
+                "substituted_out": 3,
+                "goals_scored": 3,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-05-14T20:36:59+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:335",
+                "name": "Coupe de France",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:3114",
+                "scheduled": 125,
+                "played": 73,
+                "max_coverage_level": "silver",
+                "max_covered": 73,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:3380",
+            "name": "Ligue 1 11\/12",
+            "statistics": {
+                "matches_played": 38,
+                "substituted_in": 3,
+                "substituted_out": 8,
+                "goals_scored": 20,
+                "assists": 16,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-05-20T20:45:40+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:34",
+                "name": "Ligue 1",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:3380",
+                "scheduled": 385,
+                "played": 385,
+                "max_coverage_level": "silver",
+                "max_covered": 385,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:3402",
+            "name": "Champions League 11\/12",
+            "statistics": {
+                "matches_played": 6,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-12-07T19:05:08+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:3402",
+                "scheduled": 29,
+                "played": 213,
+                "max_coverage_level": "silver",
+                "max_covered": 213,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:3657",
+            "name": "World Cup 2014, Qualification",
+            "statistics": {
+                "matches_played": 9,
+                "substituted_in": 3,
+                "substituted_out": 2,
+                "goals_scored": 2,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-10-15T20:18:31+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:11",
+                "name": "WC Qualification, UEFA",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:3657",
+                "scheduled": 30,
+                "played": 269,
+                "max_coverage_level": "gold",
+                "max_covered": 1,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:4051",
+            "name": "Coupe de France 11\/12",
+            "statistics": {
+                "matches_played": 3,
+                "substituted_in": 0,
+                "substituted_out": 2,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-02-08T17:52:26+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:1643",
+                "name": "Lille OSC",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "LOSC"
+            },
+            "tournament": {
+                "id": "sr:tournament:335",
+                "name": "Coupe de France",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:7",
+                    "name": "France",
+                    "country_code": "FRA"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4051",
+                "scheduled": 160,
+                "played": 70,
+                "max_coverage_level": "silver",
+                "max_covered": 69,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:4706",
+            "name": "League Cup 12\/13",
+            "statistics": {
+                "matches_played": 4,
+                "substituted_in": 2,
+                "substituted_out": 0,
+                "goals_scored": 2,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 1,
+                "last_event_time": "2013-01-23T21:24:54+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:21",
+                "name": "EFL Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4706",
+                "scheduled": 93,
+                "played": 93,
+                "max_coverage_level": "silver",
+                "max_covered": 93,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:4710",
+            "name": "Premier League 12\/13",
+            "statistics": {
+                "matches_played": 34,
+                "substituted_in": 3,
+                "substituted_out": 17,
+                "goals_scored": 9,
+                "assists": 12,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-05-11T13:30:31+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:17",
+                "name": "Premier League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4710",
+                "scheduled": 388,
+                "played": 388,
+                "max_coverage_level": "silver",
+                "max_covered": 388,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:4788",
+            "name": "UEFA Champions League 12\/13",
+            "statistics": {
+                "matches_played": 6,
+                "substituted_in": 2,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-12-05T21:01:29+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4788",
+                "scheduled": 29,
+                "played": 214,
+                "max_coverage_level": "silver",
+                "max_covered": 213,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:4790",
+            "name": "UEFA Europa League 12\/13",
+            "statistics": {
+                "matches_played": 7,
+                "substituted_in": 2,
+                "substituted_out": 4,
+                "goals_scored": 1,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-05-02T20:36:11+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:679",
+                "name": "UEFA Europa League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4790",
+                "scheduled": 12,
+                "played": 480,
+                "max_coverage_level": "silver",
+                "max_covered": 480,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:4816",
+            "name": "UEFA Super Cup 2012",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-08-31T17:59:08+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:465",
+                "name": "UEFA Super Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4816",
+                "scheduled": 1,
+                "played": 1,
+                "max_coverage_level": "silver",
+                "max_covered": 1,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:4861",
+            "name": "Community Shield 2012",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-08-12T14:03:32+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:346",
+                "name": "Community Shield",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:4861",
+                "scheduled": 1,
+                "played": 1,
+                "max_coverage_level": "silver",
+                "max_covered": 1,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:5413",
+            "name": "FA Cup 12\/13",
+            "statistics": {
+                "matches_played": 6,
+                "substituted_in": 3,
+                "substituted_out": 0,
+                "goals_scored": 1,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-04-14T14:37:36+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:19",
+                "name": "FA Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:5413",
+                "scheduled": 494,
+                "played": 277,
+                "max_coverage_level": "silver",
+                "max_covered": 164,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:5661",
+            "name": "Club World Cup 2012",
+            "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-12-16T12:13:47+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:357",
+                "name": "Club World Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:5661",
+                "scheduled": 8,
+                "played": 8,
+                "max_coverage_level": "silver",
+                "max_covered": 8,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:6295",
+            "name": "League Cup 13\/14",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 1,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-12-17T21:25:33+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:21",
+                "name": "EFL Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6295",
+                "scheduled": 95,
+                "played": 94,
+                "max_coverage_level": "silver",
+                "max_covered": 94,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:6301",
+            "name": "UEFA Super Cup 2013",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-08-30T21:10:49+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:465",
+                "name": "UEFA Super Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6301",
+                "scheduled": 1,
+                "played": 1,
+                "max_coverage_level": "silver",
+                "max_covered": 1,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:6311",
+            "name": "Premier League 13\/14",
+            "statistics": {
+                "matches_played": 35,
+                "substituted_in": 3,
+                "substituted_out": 11,
+                "goals_scored": 14,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-05-11T15:46:26+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:17",
+                "name": "Premier League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6311",
+                "scheduled": 394,
+                "played": 390,
+                "max_coverage_level": "silver",
+                "max_covered": 389,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:6359",
+            "name": "UEFA Champions League 13\/14",
+            "statistics": {
+                "matches_played": 9,
+                "substituted_in": 1,
+                "substituted_out": 3,
+                "goals_scored": 2,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-04-30T18:00:11+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6359",
+                "scheduled": 29,
+                "played": 216,
+                "max_coverage_level": "silver",
+                "max_covered": 214,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:6753",
+            "name": "International Champions Cup 2013",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-08-05T00:06:49+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:1337",
+                "name": "Int. Champions Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6753",
+                "scheduled": 12,
+                "played": 11,
+                "max_coverage_level": "silver",
+                "max_covered": 11,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:6871",
+            "name": "FA Cup 13\/14",
+            "statistics": {
+                "matches_played": 3,
+                "substituted_in": 1,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-02-15T16:29:11+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:19",
+                "name": "FA Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:6871",
+                "scheduled": 165,
+                "played": 155,
+                "max_coverage_level": "silver",
+                "max_covered": 155,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:7528",
+            "name": "World Championship 2014",
+            "statistics": {
+                "matches_played": 5,
+                "substituted_in": 1,
+                "substituted_out": 2,
+                "goals_scored": 0,
+                "assists": 2,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-07-05T17:32:54+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:16",
+                "name": "World Championship",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:7528",
+                "scheduled": 16,
+                "played": 64,
+                "max_coverage_level": "gold",
+                "max_covered": 64,
+                "min_coverage_level": "gold"
+            }
+        }, {
+            "id": "sr:season:7802",
+            "name": "European Ch.ship QF 2016",
+            "statistics": {
+                "matches_played": 9,
+                "substituted_in": 0,
+                "substituted_out": 3,
+                "goals_scored": 5,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-10-13T20:28:03+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:27",
+                "name": "European Ch.ship QF",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:7802",
+                "scheduled": 8,
+                "played": 269,
+                "max_coverage_level": "gold",
+                "max_covered": 257,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:8184",
+            "name": "League Cup 14\/15",
+            "statistics": {
+                "matches_played": 5,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 2,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-03-01T17:25:39+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:21",
+                "name": "EFL Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:8184",
+                "scheduled": 93,
+                "played": 93,
+                "max_coverage_level": "gold",
+                "max_covered": 18,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:8186",
+            "name": "Premier League 14\/15",
+            "statistics": {
+                "matches_played": 38,
+                "substituted_in": 0,
+                "substituted_out": 12,
+                "goals_scored": 14,
+                "assists": 8,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-05-24T15:38:35+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:17",
+                "name": "Premier League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:8186",
+                "scheduled": 388,
+                "played": 382,
+                "max_coverage_level": "gold",
+                "max_covered": 377,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:8226",
+            "name": "UEFA Champions League 14\/15",
+            "statistics": {
+                "matches_played": 7,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 3,
+                "assists": 3,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-03-11T21:47:52+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:8226",
+                "scheduled": 30,
+                "played": 216,
+                "max_coverage_level": "gold",
+                "max_covered": 159,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:9506",
+            "name": "FA Cup 14\/15",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 1,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-01-25T01:53:37+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:19",
+                "name": "FA Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:9506",
+                "scheduled": 157,
+                "played": 157,
+                "max_coverage_level": "gold",
+                "max_covered": 42,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:10231",
+            "name": "Int. Champions Cup 2015",
+            "statistics": {
+                "matches_played": 4,
+                "substituted_in": 2,
+                "substituted_out": 2,
+                "goals_scored": 2,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-08-05T20:36:17+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:1337",
+                "name": "Int. Champions Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10231",
+                "scheduled": 23,
+                "played": 23,
+                "max_coverage_level": "gold",
+                "max_covered": 21,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:10404",
+            "name": "League Cup 15\/16",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-10-27T22:08:01+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:21",
+                "name": "EFL Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10404",
+                "scheduled": 93,
+                "played": 93,
+                "max_coverage_level": "gold",
+                "max_covered": 24,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:10412",
+            "name": "Premier League 15\/16",
+            "statistics": {
+                "matches_played": 31,
+                "substituted_in": 6,
+                "substituted_out": 6,
+                "goals_scored": 4,
+                "assists": 3,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-05-15T15:39:41+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:17",
+                "name": "Premier League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10412",
+                "scheduled": 393,
+                "played": 390,
+                "max_coverage_level": "gold",
+                "max_covered": 376,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:10420",
+            "name": "Community Shield 2015",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-08-02T15:18:09+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:346",
+                "name": "Community Shield",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10420",
+                "scheduled": 1,
+                "played": 1,
+                "max_coverage_level": "gold",
+                "max_covered": 1,
+                "min_coverage_level": "gold"
+            }
+        }, {
+            "id": "sr:season:10484",
+            "name": "UEFA Champions League 15\/16",
+            "statistics": {
+                "matches_played": 8,
+                "substituted_in": 2,
+                "substituted_out": 4,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-03-09T21:18:27+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:7",
+                "name": "UEFA Champions League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10484",
+                "scheduled": 29,
+                "played": 219,
+                "max_coverage_level": "gold",
+                "max_covered": 172,
+                "min_coverage_level": "bronze"
+            }
+        }, {
+            "id": "sr:season:10876",
+            "name": "WC Qualification 2018",
+            "statistics": {
+                "matches_played": 4,
+                "substituted_in": 0,
+                "substituted_out": 2,
+                "goals_scored": 3,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-11-13T21:15:35+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:11",
+                "name": "WC Qualification, UEFA",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:10876",
+                "scheduled": 30,
+                "played": 135,
+                "max_coverage_level": "platinum",
+                "max_covered": 59,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:11904",
+            "name": "FA Cup 15\/16",
+            "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 2,
+                "assists": 3,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-02-21T17:23:54+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:19",
+                "name": "FA Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:11904",
+                "scheduled": 150,
+                "played": 150,
+                "max_coverage_level": "gold",
+                "max_covered": 38,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:12170",
+            "name": "European Championship 2016",
+            "statistics": {
+                "matches_played": 5,
+                "substituted_in": 0,
+                "substituted_out": 2,
+                "goals_scored": 1,
+                "assists": 4,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-07-01T20:48:27+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:4717",
+                "name": "Belgium",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "BEL"
+            },
+            "tournament": {
+                "id": "sr:tournament:1",
+                "name": "European Championship",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:4",
+                    "name": "International"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:12170",
+                "scheduled": 6,
+                "played": 51,
+                "max_coverage_level": "platinum",
+                "max_covered": 32,
+                "min_coverage_level": "gold"
+            }
+        }, {
+            "id": "sr:season:32871",
+            "name": "Int. Champions Cup 2016",
+            "statistics": {
+                "matches_played": 2,
+                "substituted_in": 2,
+                "substituted_out": 0,
+                "goals_scored": 2,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-08-04T02:46:11+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:1337",
+                "name": "Int. Champions Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:393",
+                    "name": "International Clubs"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:32871",
+                "scheduled": 21,
+                "played": 21,
+                "max_coverage_level": "platinum",
+                "max_covered": 8,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:32887",
+            "name": "Premier League 16\/17",
+            "statistics": {
+                "matches_played": 26,
+                "substituted_in": 0,
+                "substituted_out": 18,
+                "goals_scored": 11,
+                "assists": 4,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2017-03-06T21:33:56+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:17",
+                "name": "Premier League",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:32887",
+                "scheduled": 387,
+                "played": 290,
+                "max_coverage_level": "platinum",
+                "max_covered": 282,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:33095",
+            "name": "EFL Cup 16\/17",
+            "statistics": {
+                "matches_played": 1,
+                "substituted_in": 1,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2016-09-20T20:42:58+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:21",
+                "name": "EFL Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:33095",
+                "scheduled": 93,
+                "played": 93,
+                "max_coverage_level": "gold",
+                "max_covered": 17,
+                "min_coverage_level": "silver"
+            }
+        }, {
+            "id": "sr:season:35800",
+            "name": "FA Cup 16\/17",
+            "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2017-03-13T21:08:01+00:00"
+            },
+            "team": {
+                "id": "sr:competitor:38",
+                "name": "Chelsea FC",
+                "country": "England",
+                "country_code": "ENG",
+                "abbreviation": "CHE"
+            },
+            "tournament": {
+                "id": "sr:tournament:19",
+                "name": "FA Cup",
+                "sport": {
+                    "id": "sr:sport:1",
+                    "name": "Soccer"
+                },
+                "category": {
+                    "id": "sr:category:1",
+                    "name": "England",
+                    "country_code": "ENG"
+                }
+            },
+            "season_coverage_info": {
+                "season_id": "sr:season:35800",
+                "scheduled": 159,
+                "played": 156,
+                "max_coverage_level": "platinum",
+                "max_covered": 3,
+                "min_coverage_level": "silver"
+            }
+        }],
+        "totals": {
+            "matches_played": 462,
+            "substituted_in": 83,
+            "substituted_out": 162,
+            "goals_scored": 127,
+            "assists": 89,
+            "own_goals": 0,
+            "yellow_cards": 23,
+            "yellow_red_cards": 0,
+            "red_cards": 1,
+            "last_event_time": "2017-03-13T21:08:01+00:00"
+        }
+    }
+}

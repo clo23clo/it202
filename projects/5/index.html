@@ -15,16 +15,21 @@
           
           var apiPassThruUrl = "https://polar-garden-75406.herokuapp.com/apiPassThru.php";
           
-          var apiEndpoint = "https://api.sportradar.us/soccer-t3/eu/en/schedules/2017-03-01/results.xml?api_key=e5jnwg8wsrhgvahrw4cxbm59";
-          var apiEndpoint = "https://api.sportradar.us/soccer-t3/eu/en/players/sr:player:76632/profile.json?api_key=e5jnwg8wsrhgvahrw4cxbm59";
+          var apiEndpoint = "https://api.sportradar.us/soccer-t3/eu/en/teams/sr:competitor:38/profile.xml?api_key=e5jnwg8wsrhgvahrw4cxbm59";
+          var apiEndpoint = "https://api.sportradar.us/soccer-t3/eu/en/players/sr:player:27583/profile.json?api_key=e5jnwg8wsrhgvahrw4cxbm59";
           var apiEndpoint = "https://api.sportradar.us/soccer-t3/eu/en/tournaments/sr:tournament:17/standings.xml?api_key=e5jnwg8wsrhgvahrw4cxbm59";
+          
           $.ajax({
               url: apiPassThruUrl,
               dataType: "json",
               method: 'GET',
               data: {"apiEndpoint": apiEndpoint,
                       "api_key" : "e5jnwg8wsrhgvahrw4cxbm59",
-                      "tournament_id": "",
+                      "tournament_id": "sr:tournament:17",
+                      "season_id": "sr:season:32887", 
+                      "category_id": "sr:category:1",
+                      "team_id": "sr:competitor:38",
+                      "player_id": "sr:player:27583",
                       "format":"json"}
             }).done (function (data) {
               console.log(data);
