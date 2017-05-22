@@ -1,28 +1,42 @@
+.busTimes {
+    width: 100%;
+    height: 500px;
+}
+   #Northbound {
+    height: 25%;
+    width: 25%;
+    border-style: double;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
 
-    #Northbound{
-      width: 25%;
-      float: left;
-      border-style: double;
-      append: top;
-    }
-    #Southbound{
-      width: 25%;
-      float: left;
-      border-style: double;
-     append: bottom;
-    }
-    #Eastbound{
-      width: 25%;
-      float: right;
-      border-style: double;
-      append: top; 
-    }
-    #Westbound{
-      width: 25%;
-      float: right;
-      border-style: double;
-      append: bottom;    
-    }
+#Southbound {
+    height: 25%;
+    width: 25%;
+    border-style: double;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
+
+#Eastbound {
+    height: 25%;
+    width: 25%;
+    border-style: double;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+
+#Westbound {
+    height: 25%;
+    width: 25%;
+    border-style: double;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
     div {
       padding: 5px;
       margin: auto;

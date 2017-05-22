@@ -1,23 +1,48 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery.parseXML demo</title>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+  <title>CTA bus tracker</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <link rel="stylesheet" type="text/html" href="busTracker.html"/>
+  <link rel="pagetwo" type="text/html" hred="index.html"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+     <div data-role="main" class="ui-content">
+     <div data-role="header" id="pagetwo">
+    <h1 style="background-color:#C1E7FF;">Western and Addison</h1>
+     <div data-role="footer" class="ui-content">
+  </div>
+  <div id="busTimes">
+     <div id="Northbound">
+       <h1 style="font-size: 24px;">Western heading Northbound</h1>
+     </div>
+     <br>
+     <div id="Southbound">
+      <h1 style="font-size: 24px;">Western heading Southbound</h1>
+     </div>
+     <br>
+     <div id="Eastbound">
+      <h1 style="font-size: 24px;">Addison heading Eastbound</h1>
+     </div>
+     <br>
+     <div id="Westbound">
+      <h1 style="font-size: 24px;">Addison heading Westbound</h1>
+     </div>
+     </div>
+  <script>
 
- 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script>
         $(function() {
+          
           
           var apiPassThruUrl = "https://polar-garden-75406.herokuapp.com/apiPassThru.php";
           
-          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga";
-          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/table";
-          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/formations";
-          var apiEndpoint = "https://heisenbug-bundesliga-live-scores-v1.p.mashape.com/api/bundesliga/match/events";
+          var apiEndpoint = "http://www.ctabustracker.com/bustime/api/v2/getpredictions";
           
           
           $.ajax({
@@ -25,21 +50,31 @@
               dataType: "json",
               method: 'GET',
               data: {"apiEndpoint": apiEndpoint,
+                      "key" : "yqsE5uWnZsg3xdX3VWMemh8Mv",
+                      "rt": "49,152",
+                      "stpid": "8417,8195,12527,12569",
                       "format":"json"}
             }).done (function (data) {
               console.log(data);
-              $("body").append("<h1>Bundesliga</h1>");
-             
-              $.each(data["bustime-response"]["routes"], function(i,v) {
-                  $("body").append("Route #" + v.rt + ", " + v.rtnm + "<br>");
+              $("body").append();
+          var Northbound = ",";
+          var Southbound = ",";
+          var Eastbound = ",";
+          var Westbound = ",";
+              $.each(data["bustime-response"]["prd"], function(i,v) {
+                $("#"+ v.rtdir).append("Stop: " + v.stpnm + "<br><br>"+ "Direction: " + v.rtdir + "<br><br>"+ "Time 'till due: "  + v.prdctdn + "<br>");
+            
                 
               })
 
             });
         });
-            
-  
 </script>
- 
-</body>
+<div data-role="header" class="ui-content">
+     <p>Click to go back to homepage</p>
+    <a href="busTracker.html">Go Back</a>
+  </div>
+  <div data-role="footer" class="ui-content">
+  </div>
+    </body>
 </html>
