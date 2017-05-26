@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 150;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 0 * Math.PI, false);
+      context.fillStyle = 'black';
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = 'black';
+      context.stroke();
+      
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 125;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'white';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#FFFFF';
+      context.stroke();
+      
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 100;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 0 * Math.PI, false);
+      context.fillStyle = 'black';
+      context.fill();
+      context.lineWidth = 1;
+      context.strokeStyle = 'black';
+      context.stroke();
+      
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 100;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'white';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#FFFFF';
+      context.stroke();
+      
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var radius = 20;
+      var startAngle = 1.8 * Math.PI;
+      var endAngle = 4.4 * Math.PI;
+      var counterClockwise = false;
+
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 30;
+      
+
+      // line color
+      context.strokeStyle = '';
+      context.stroke();
+      
+      context.font = '';
+      context.fillStyle = '';
+      context.fillText();
+    </script>
+  </body>
+</html>      
